@@ -1,0 +1,43 @@
+{
+  "name": "bbc-news",
+  "version": "0.0.0",
+  "description": "BBC news",
+  "homepage": "https://github.com/jiteshnambiar/",
+  "author": {
+    "name": "Jitesh Nambiar",
+    "email": "author@email.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "bbc",
+    "news"
+  ],
+  "devDependencies": {
+    "nsp": "^2.6.3",
+    "eslint": "^3.18.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.1"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "/bbc-news",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "MIT"
+}
